@@ -1,3 +1,11 @@
+# Citation-register reconciliation — 2026-10-26
+
+Google Drive is authoritative. Mirrored AIS v11 / CFG011, Research Data v20 / CFG020, and Chapter 2 ACE v02 / CFG002 from the approved Drive-controlled bytes. All 20 proposed section 2.3 references are mapped, with 32 in-text occurrences. ACE contains 13 new scholarly candidates and 3 new agency authorities; four existing source IDs are retained. Carlo reading/approval remains separate from manuscript citation. Existing scores, outreach history, raw-data readiness and manuscript prose are unchanged.
+
+Both Active Registers and 00A placements are synchronized. Predecessors are preserved under 99 — Superseded Register Versions. SHA-256 and Git blob hashes are recorded in REGISTER_RECONCILIATION_2026-10-26.json. This is a scoped update, not a whole-repository certification.
+
+---
+
 # Mirror Status
 
 ## Scoped Chapter 2 synchronization — 2026-10-24

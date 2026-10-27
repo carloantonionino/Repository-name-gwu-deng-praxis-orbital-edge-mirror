@@ -1,0 +1,59 @@
+{
+  "date": "2026-10-26",
+  "authority": "Google Drive",
+  "scope": "Three citation registers; five live placements; three predecessor backups. No manuscript, model, raw data, or other register versions changed.",
+  "references": 20,
+  "new_records": 16,
+  "existing_ids": [
+    "L011",
+    "L012",
+    "L018",
+    "L044"
+  ],
+  "in_text_occurrences": 32,
+  "files": [
+    {
+      "register": "AIS",
+      "drive_file_ids": [
+        "1zsrpLKhRJMcKAPprz_AUQrLQpSNaR_3D",
+        "10r6d4PSGm_aelzB4TUN87zuS6tffEwCx"
+      ],
+      "paths": [
+        "00 — README & Governance/02 — Registers & Configuration Control/01 — Active Registers/GWU_Praxis_AIS_Master_Register_2026-10-26_v11_Section23_Reconciled__AIS-Master__CFG011.xlsx",
+        "00A — Registers & Configuration Control/GWU_Praxis_AIS_Master_Register_2026-10-26_v11_Section23_Reconciled__AIS-Master__CFG011.xlsx"
+      ],
+      "archive_path": "00 — README & Governance/02 — Registers & Configuration Control/99 — Superseded Register Versions/GWU_Praxis_AIS_Master_Register_2026-09-28_v10_Karlstad_Response__AIS-Master__CFG010.xlsx",
+      "sha256": "8454bbab11fd37ff6b16465cb71ab80f5008dcda92046e7e41fcad9f81a59d3c",
+      "git_blob_sha": "9c4e622d021c4c36b1c646ff41d1d33906d636cf",
+      "bytes": 100676
+    },
+    {
+      "register": "DATA",
+      "drive_file_ids": [
+        "1VOXVDT4NSq-zQqfFRQi7Xylu3qwkOlCt",
+        "1fSS4V55cZ83i-DbG-HgIdBPIacSH_tH4"
+      ],
+      "paths": [
+        "00 — README & Governance/02 — Registers & Configuration Control/01 — Active Registers/International_Domestic_Research_Data_Register_2026-10-26_v20_Section23_Reconciled__Research-Data__CFG020.xlsx",
+        "00A — Registers & Configuration Control/International_Domestic_Research_Data_Register_2026-10-26_v20_Section23_Reconciled__Research-Data__CFG020.xlsx"
+      ],
+      "archive_path": "00 — README & Governance/02 — Registers & Configuration Control/99 — Superseded Register Versions/International_Domestic_Research_Data_Register_2026-09-28_v19_Karlstad_Response__Research-Data__CFG019.xlsx",
+      "sha256": "1c908886390b4518d0e0cf21e60bff7791b5e99c70f36f58c5dd59432f040c96",
+      "git_blob_sha": "ff041bce7abc7e9a7f5dcde27e01fc3861646684",
+      "bytes": 207237
+    },
+    {
+      "register": "ACE",
+      "drive_file_ids": [
+        "1YCkBJonhz08O0FFjT2g2CozdBZpkZXE3"
+      ],
+      "paths": [
+        "01 — Advisor & Administrative/01 — Advisor Updates & Meeting Records/Mtg 3 - Oct 03, 2026/Nino_Chapter2_ACE_Literature_Data_Register_2026-10-26_v02_Section23_Reconciled__CFG002.xlsx"
+      ],
+      "archive_path": "00 — README & Governance/02 — Registers & Configuration Control/99 — Superseded Register Versions/Nino_Chapter2_ACE_Literature_Data_Register_2026-09-28_v01__CFG001.xlsx",
+      "sha256": "142a0f8e454bafe919ab05c1fc2de5e9538b03bc9f10456a3df59d4702e1bca2",
+      "git_blob_sha": "e177e8b9caa5f943fc8636dbbc38b287ad61cb99",
+      "bytes": 76246
+    }
+  ]
+}
