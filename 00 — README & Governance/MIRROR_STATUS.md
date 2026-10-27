@@ -1,3 +1,13 @@
+## Working manuscript synchronization — October 27, 2026
+
+- Google Drive is the authoritative source: [vx - Oct 27 cn.docx](https://docs.google.com/document/d/1pWkb_4DU4R2ds4q0dCuz8I6E7Y8J-zrN/edit), saved under Meeting 5 (October 31).
+- GitHub mirrored file: `01 — Advisor & Administrative/01 — Advisor Updates & Meeting Records/Mtg 5 - Oct 31, 2026/vx - Oct 27 cn.docx`.
+- Byte count: **88,200**; SHA-256: `ed30914397428c2fed0e1d0f6fff2068dea286166c8ed9075c997f57b87c4691`; Git blob SHA: `12cc4cd8ca1afda6a62fe89e73c06c43dbad08fb`.
+- Working merged copy incorporating user-edited section 2.3 v2 and consolidated references; distinct from the preserved v9 working expansion.
+- Scope: this document and the present mirror-status entry only. Does not certify MATLAB, data archives, other files or an advisor submission.
+
+---
+
 # Citation-register reconciliation — 2026-10-26
 
 Google Drive is authoritative. Mirrored AIS v11 / CFG011, Research Data v20 / CFG020, and Chapter 2 ACE v02 / CFG002 from the approved Drive-controlled bytes. All 20 proposed section 2.3 references are mapped, with 32 in-text occurrences. ACE contains 13 new scholarly candidates and 3 new agency authorities; four existing source IDs are retained. Carlo reading/approval remains separate from manuscript citation. Existing scores, outreach history, raw-data readiness and manuscript prose are unchanged.
