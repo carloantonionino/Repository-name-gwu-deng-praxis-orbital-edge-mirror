@@ -1,3 +1,15 @@
+## Working manuscript synchronization — October 28, 2026
+
+- **Google Drive is ASOT.** Source file: [vx - Oct 28 cn.docx](https://docs.google.com/document/d/1mqAizu6n16Vue1_tZQYz59OGw-BgYnOx/edit), Meeting 5 (October 31, 2026).
+- **Digital twin:** `01 — Advisor & Administrative/01 — Advisor Updates & Meeting Records/Mtg 5 - Oct 31, 2026/vx - Oct 28 cn.docx`.
+- Source size: **92,561 bytes**; SHA-256: `6fba333a177c3ac7be2c20c32077dae5af66df7860eb1586da9419f092adb3b3`; Git blob: `cf8d4841d02f174a113ac23fad9ba2e01b2fb26f`.
+- This is a **separate working merger** of the preserved v9 Chapter 2 and Carlo's October 28 section 2.3 Expansion v4. Existing v9 and the October 27 merged copy remain preserved.
+- Integration: 69 source narrative paragraphs, 91 unique reference entries after merging 20 expansion references (15 new, 5 already present), 14 inherited reviewer comment markers retained, Table 2-1 intact. Rendered as 71 pages (10 front matter; 47 narrative; 14 bibliography).
+- Table of Contents / table-list page references updated and rendered. Content has **not** been checked by the user's external AI detector; manuscript remains for author review and optional advisor submission.
+- Synchronization scope limited to this DOCX and this governance entry. No MATLAB, datasets, or unrelated repository content changed.
+
+---
+
 ## Working manuscript synchronization — October 27, 2026
 
 - Google Drive is the authoritative source: [vx - Oct 27 cn.docx](https://docs.google.com/document/d/1pWkb_4DU4R2ds4q0dCuz8I6E7Y8J-zrN/edit), saved under Meeting 5 (October 31).
