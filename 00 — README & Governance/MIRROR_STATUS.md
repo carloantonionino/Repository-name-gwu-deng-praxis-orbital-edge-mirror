@@ -1,3 +1,17 @@
+## Session 5 package synchronization — October 29, 2026
+
+Google Drive remains ASOT. Mirrored the verified October 28 v10 manuscript and full 29-slide GWU advisor deck for the October 30 briefing. The historical Meeting 5 folder name is retained.
+
+- Manuscript: `v10 - Oct 28 cn.docx`; Drive ID `12ZWPsFc2J9PaHwML62_epcqR9W4eAnLz`; 94,932 bytes; SHA-256 `82b7018c82884de50f3840448964199dee481bcf98dce366171a3f64cad37a53`. Tan marks additions and citation updates since Meeting 4 (v8).
+- Deck: `GWU Dr Hao - Session 5 - Oct 30, 2026 - Updated Oct 28.pptx`; Drive ID `1ESMxpTGZSDvq3GjKXveDFanzIhJfO7FF`; 2,326,078 bytes; SHA-256 `fcdda09f65f30302ad349f27cbedcbf94d47ee350752c61abc28d8674e819551`. Full GWU cover, colored hypothesis illustration, advisor responses and updated schedules retained.
+- Chapter 2 narrative: 17 pages (v8), 32 (v9), 47 (v10). Growth is +30 since Meeting 4 and +15 beyond v9, excluding front matter and bibliography.
+- Gantt markers: green October 30; red November 14, 2026, Session 6.
+- MATLAB evidence: 200 entity-level comparisons, 100 per architecture, within one bounded regression. Additional owner reproduction and scaled replications remain separate gates.
+- Next priority: modify, reduce and edit Chapter 2 following advisor guidance. Advisor acceptance and submission are not claimed.
+- Exact hashes verified before committing. Prior manuscripts, model and data files remain unchanged. Temporary transfer machinery removed after successful verification. Detailed scope: `Session 5 Sync - 29 Oct 2026.json`.
+
+---
+
 ## Working manuscript synchronization — October 28, 2026
 
 - **Google Drive is ASOT.** Source file: [vx - Oct 28 cn.docx](https://docs.google.com/document/d/1mqAizu6n16Vue1_tZQYz59OGw-BgYnOx/edit), Meeting 5 (October 31, 2026).

@@ -1,0 +1,34 @@
+{
+  "sync_date": "2026-10-29",
+  "artifact_date": "2026-10-28",
+  "session_5_briefing": "2026-10-30",
+  "session_6": "2026-11-14",
+  "authority": "Google Drive",
+  "scope": "Two completed Drive-authoritative Office artifacts; prior versions preserved",
+  "narrative_pages": {
+    "v8_meeting_4": 17,
+    "v9": 32,
+    "v10": 47,
+    "increase_since_meeting_4": 30,
+    "increase_since_v9": 15,
+    "excludes": "Front matter and bibliography"
+  },
+  "deck_slides": 29,
+  "matlab_evidence": "Recorded bounded regression: 100 observations per architecture, 200 entity-level latency comparisons, not 200 replications; owner reproduction remains pending",
+  "files": [
+    {
+      "destination": "01 — Advisor & Administrative/01 — Advisor Updates & Meeting Records/Mtg 5 - Oct 31, 2026/v10 - Oct 28 cn.docx",
+      "drive_id": "12ZWPsFc2J9PaHwML62_epcqR9W4eAnLz",
+      "size": 94932,
+      "sha256": "82b7018c82884de50f3840448964199dee481bcf98dce366171a3f64cad37a53",
+      "git_blob": "657e1f7d4a8d298be5ce09493f5dc767993811b1"
+    },
+    {
+      "destination": "01 — Advisor & Administrative/01 — Advisor Updates & Meeting Records/Mtg 5 - Oct 31, 2026/GWU Dr Hao - Session 5 - Oct 30, 2026 - Updated Oct 28.pptx",
+      "drive_id": "1ESMxpTGZSDvq3GjKXveDFanzIhJfO7FF",
+      "size": 2326078,
+      "sha256": "fcdda09f65f30302ad349f27cbedcbf94d47ee350752c61abc28d8674e819551",
+      "git_blob": "9ad7b0a11d513c27c71ba12a56dde612b2d1ec9e"
+    }
+  ]
+}
