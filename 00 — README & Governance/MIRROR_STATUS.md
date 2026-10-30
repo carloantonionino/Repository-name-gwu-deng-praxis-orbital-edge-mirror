@@ -1,3 +1,14 @@
+## v11 formatting correction — October 29, 2026
+
+- Google Drive ASOT remains [v11 - Oct 28 cn.docx](https://docs.google.com/document/d/12ZWPsFc2J9PaHwML62_epcqR9W4eAnLz/edit), updated in place. Mirror uses the current Mtg 5 - Oct 30, 2026 folder.
+- Corrected merge-inherited 1.5-line spacing in 53 narrative paragraphs and 15 reference entries; standardized body and reference typography to Times New Roman 12, double spacing, zero added paragraph spacing, 0.5-inch body first-line and reference hanging indents. Headings normalized within their retained hierarchy. Existing GWU margins and front matter retained.
+- Basis: Drive DEng Praxis Template - Online Programs Rev 2026 (1vqSB4M-BKnDXqt6DCz_qrAcZixfw7Mzz) and Gordon/Edit911 formatting baseline (1OG_NZQODVzRHQOM11550P44B1IFBEniI), plus Carlo's established formatting instructions.
+- All narrative/reference wording, 91 unique references, 14 comments, tables and requested highlight scope preserved. Exactly 20 references highlighted. TOC/list-of-tables caches and cover highlight page range refreshed.
+- Normalized render: 76 pages = 10 front matter + 51 Chapter 2 narrative + 15 References. Review focus now printed pp. 22–38. Reflow is formatting-only, not newly authored content. Earlier 47-page narrative count described mixed spacing. Advisor deck was not revised by this formatting-only task.
+- Drive readback: 1,058,428 bytes; SHA-256 `ecc3e0ec432d5def3f9dccaa44ea2c809f117b477418b8b428cd0b3f008b1e0a`; Git blob `f89e1a8a052eeb28b7e86c7390b0e0934bd4ffbb`. Exact checksum match required before commit.
+
+---
+
 ## v11 focused-highlighting replacement — October 29, 2026
 
 - Google Drive ASOT: [v11 - Oct 28 cn.docx](https://docs.google.com/document/d/12ZWPsFc2J9PaHwML62_epcqR9W4eAnLz/edit). Replaced v10 in place with the same file ID and permissions.
