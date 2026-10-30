@@ -7,115 +7,30 @@ permissions:
   contents: write
 jobs:
   mirror:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
     steps:
       - uses: actions/checkout@v4
+        with:
+          fetch-depth: 2
       - uses: actions/setup-python@v5
         with:
           python-version: '3.13.5'
-      - name: Prepare XML processor
-        run: python -m pip install --quiet lxml==6.1.1
+      - name: Prepare exact controlled transformation
+        run: |
+          python -m pip install --quiet lxml==6.1.1 PyYAML
+          git show '8cc459d19e1c7510654571241562662c01dc172b:.github/workflows/praxis-v11-format-normalize-20261029.yml' > /tmp/verified-transformation.yml
       - name: Reproduce exact verified Drive-authoritative bytes
         shell: bash
         run: |
           python - <<'PY'
+          import yaml, subprocess
           from pathlib import Path
-          from lxml import etree as E
-          import zipfile, hashlib, re
-          src=Path('01 — Advisor & Administrative/01 — Advisor Updates & Meeting Records/Mtg 5 - Oct 30, 2026/v11 - Oct 28 cn.docx')
-          out=Path('/tmp/v11-normalized.docx')
-          assert hashlib.sha256(src.read_bytes()).hexdigest()=='afb46794aaadd4564cec70ba48b8533b039841603d74551cd5d2ac53c25f49de','Source drift'
-          N={'w':'http://schemas.openxmlformats.org/wordprocessingml/2006/main'};W='{'+N['w']+'}'
-          def text(p):return ''.join(p.xpath('.//w:t/text()',namespaces=N))
-          def add(p,n,first=False):
-           e=p.find(W+n)
-           if e is None:
-            e=E.Element(W+n)
-            if first:p.insert(0,e)
-            else:p.append(e)
-           return e
-          def setv(p,n,a):
-           e=add(p,n);e.attrib.clear()
-           for k,v in a.items():e.set(W+k,str(v))
-           return e
-          def font(p):
-           setv(p,'rFonts',{a:'Times New Roman' for a in ('ascii','hAnsi','eastAsia','cs')})
-           setv(p,'sz',{'val':'24'});setv(p,'szCs',{'val':'24'})
-           for n in ['spacing','w','fitText','kern']:
-            for e in list(p.findall(W+n)):p.remove(e)
-          def para(p,kind):
-           setv(p,'spacing',{'before':'0','after':'0','line':'480','lineRule':'auto'})
-           setv(p,'jc',{'val':'center' if kind in ('Heading1','caption') else 'left'})
-           if kind=='reference':setv(p,'ind',{'left':'720','right':'0','hanging':'720'})
-           elif kind=='body':setv(p,'ind',{'left':'0','right':'0','firstLine':'720'})
-           else:setv(p,'ind',{'left':'0','right':'0','firstLine':'0'})
-           setv(p,'contextualSpacing',{'val':'0'});setv(p,'widowControl',{'val':'1'})
-           if kind.startswith('Heading'):
-            setv(p,'keepNext',{'val':'1'});setv(p,'keepLines',{'val':'1'})
-          with zipfile.ZipFile(src) as z:
-           infos=z.infolist();data={i.filename:z.read(i.filename) for i in infos}
-          r=E.fromstring(data['word/document.xml']);s=E.fromstring(data['word/styles.xml'])
-          pp=r.xpath('//w:body/w:p',namespaces=N)
-          a=next(i for i,p in enumerate(pp) if text(p).strip()=='Chapter 2 - Literature Review')
-          b=next(i for i,p in enumerate(pp) if i>a and text(p).strip()=='References')
-          original=[text(p) for p in r.xpath('//w:p',namespaces=N)]
-          styles={e.get(W+'styleId'):e for e in s.findall(W+'style')}
-          for sid,name,kind in [('PraxisBody','Praxis Body','body'),('PraxisReferences','Praxis References','reference')]:
-           st=styles.get(sid)
-           if st is None:st=E.SubElement(s,W+'style',{W+'type':'paragraph',W+'customStyle':'1',W+'styleId':sid})
-           setv(st,'name',{'val':name});setv(st,'basedOn',{'val':'Normal'});setv(st,'next',{'val':sid})
-           para(add(st,'pPr'),kind);font(add(st,'rPr'))
-          for i,p in enumerate(pp):
-           if i<a or not text(p).strip():continue
-           pr=add(p,'pPr',True);ps=pr.find(W+'pStyle');sid=ps.get(W+'val') if ps is not None else 'Normal'
-           if i>b:kind='reference';setv(pr,'pStyle',{'val':'PraxisReferences'})
-           elif sid.startswith('Heading'):kind=sid
-           elif sid.startswith('Caption'):kind='caption'
-           else:kind='body';setv(pr,'pStyle',{'val':'PraxisBody'})
-           para(pr,kind)
-           for run in p.xpath('.//w:r',namespaces=N):
-            if run.xpath('./w:t',namespaces=N):font(add(run,'rPr',True))
-           font(add(pr,'rPr'))
-          for run in r.xpath('//w:tbl//w:r[w:t]',namespaces=N):font(add(run,'rPr',True))
-          assert original==[text(p) for p in r.xpath('//w:p',namespaces=N)]
-          po='pStyle keepNext keepLines pageBreakBefore framePr widowControl numPr suppressLineNumbers pBdr shd tabs suppressAutoHyphens kinsoku wordWrap overflowPunct topLinePunct autoSpaceDE autoSpaceDN bidi adjustRightInd snapToGrid spacing ind contextualSpacing mirrorIndents suppressOverlap jc textDirection textAlignment textboxTightWrap outlineLvl divId cnfStyle rPr sectPr pPrChange'.split()
-          ro='rStyle rFonts b bCs i iCs caps smallCaps strike dstrike outline shadow emboss imprint noProof snapToGrid vanish webHidden color spacing w kern position sz szCs highlight u effect bdr shd fitText vertAlign rtl cs em lang eastAsianLayout specVanish oMath rPrChange'.split()
-          for tree in (r,s):
-           for node_name,order in [('pPr',po),('rPr',ro)]:
-            ranks={k:i for i,k in enumerate(order)}
-            for node in tree.xpath('//w:'+node_name,namespaces=N):node[:]=sorted(list(node),key=lambda el:ranks.get(E.QName(el).localname,999))
-          mp={'PRXv9_1':'iv','PRXv9_2':'v','PRXv9_3':'vii','PRXv9_4':'viii','PRXv9_5':'ix','PRXv9_6':'x','PRXv9_7':'1','PRXv9_8':'1','PRXv9_9':'4','PRXv9_10':'13','PRXv9_11':'38','PRXv9_12':'42','PRXv9_13':'46','PRXv9_14':'49','PRXv9_15':'52','PRXv9_Table21':'42'}
-          for p in pp[:a]:
-           names=[m.group(1) for instr in p.xpath('.//w:instrText/text()',namespaces=N) if (m:=re.search(r'PAGEREF\s+(\S+)',instr))]
-           if names and names[-1] in mp:p.xpath('.//w:t',namespaces=N)[-1].text=mp[names[-1]]
-           for t in p.xpath('.//w:t',namespaces=N):
-            if t.text and 'Tan:' in t.text:t.text=t.text.replace('pp. 21–33','pp. 22–38')
-          app=E.fromstring(data['docProps/app.xml'])
-          for node in app.iter():
-           if E.QName(node).localname=='Pages':node.text='76'
-          for name,tree in [('word/document.xml',r),('word/styles.xml',s),('docProps/app.xml',app)]:data[name]=E.tostring(tree,xml_declaration=True,encoding='UTF-8',standalone=True)
-          with zipfile.ZipFile(out,'w') as z:
-           for info in infos:
-            info.compress_type=zipfile.ZIP_STORED;z.writestr(info,data[info.filename])
-          result=out.read_bytes()
-          assert hashlib.sha256(result).hexdigest()=='ecc3e0ec432d5def3f9dccaa44ea2c809f117b477418b8b428cd0b3f008b1e0a','Output differs from verified Drive bytes'
-          assert hashlib.sha1(b'blob '+str(len(result)).encode()+b'\0'+result).hexdigest()=='f89e1a8a052eeb28b7e86c7390b0e0934bd4ffbb'
-          src.write_bytes(result)
-          p=Path('00 — README & Governance/MIRROR_STATUS.md')
-          entry='''## v11 formatting correction — October 29, 2026
-
-          - Google Drive ASOT remains [v11 - Oct 28 cn.docx](https://docs.google.com/document/d/12ZWPsFc2J9PaHwML62_epcqR9W4eAnLz/edit), updated in place. Mirror uses the current Mtg 5 - Oct 30, 2026 folder.
-          - Corrected merge-inherited 1.5-line spacing in 53 narrative paragraphs and 15 reference entries; standardized body and reference typography to Times New Roman 12, double spacing, zero added paragraph spacing, 0.5-inch body first-line and reference hanging indents. Headings normalized within their retained hierarchy. Existing GWU margins and front matter retained.
-          - Basis: Drive DEng Praxis Template - Online Programs Rev 2026 (1vqSB4M-BKnDXqt6DCz_qrAcZixfw7Mzz) and Gordon/Edit911 formatting baseline (1OG_NZQODVzRHQOM11550P44B1IFBEniI), plus Carlo's established formatting instructions.
-          - All narrative/reference wording, 91 unique references, 14 comments, tables and requested highlight scope preserved. Exactly 20 references highlighted. TOC/list-of-tables caches and cover highlight page range refreshed.
-          - Normalized render: 76 pages = 10 front matter + 51 Chapter 2 narrative + 15 References. Review focus now printed pp. 22–38. Reflow is formatting-only, not newly authored content. Earlier 47-page narrative count described mixed spacing. Advisor deck was not revised by this formatting-only task.
-          - Drive readback: 1,058,428 bytes; SHA-256 `ecc3e0ec432d5def3f9dccaa44ea2c809f117b477418b8b428cd0b3f008b1e0a`; Git blob `f89e1a8a052eeb28b7e86c7390b0e0934bd4ffbb`. Exact checksum match required before commit.
-
-          ---
-
-          '''
-          p.write_text(entry+p.read_text(encoding='utf-8'),encoding='utf-8')
-          print('PASS: exact verified Drive bytes, same manuscript wording')
+          source=yaml.safe_load(Path('/tmp/verified-transformation.yml').read_text())
+          steps=source['jobs']['mirror']['steps']
+          step=next(s for s in steps if s.get('name')=='Reproduce exact verified Drive-authoritative bytes')
+          assert 'ecc3e0ec432d5def3f9dccaa44ea2c809f117b477418b8b428cd0b3f008b1e0a' in step['run']
+          assert 'afb46794aaadd4564cec70ba48b8533b039841603d74551cd5d2ac53c25f49de' in step['run']
+          subprocess.run(['bash','-e','-o','pipefail','-c',step['run']],check=True)
           PY
       - name: Commit verified mirror and remove one-time workflow
         shell: bash
