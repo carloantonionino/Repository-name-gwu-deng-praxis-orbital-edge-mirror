@@ -1,3 +1,23 @@
+## CURRENT: Session 5 submission and Session 6 working deck — 30 October 2026
+
+**Authority:** Green Google Drive, not the most recent Git commit timestamp. This entry supersedes the historical "current v15" language below for the Session 5 deck.
+
+### Session 5 controlled submission
+- Folder: https://drive.google.com/drive/folders/1Hh3ui0klWv9KbdVMbRJOPcJs4bAw8gTp
+- **PowerPoint:** `GWU Dr Hao - Session 5 - Oct 30, 2026 - v19 final.pptx`, 26 slides, 18,351,255 bytes; SHA256 `ef0f860ab7e604b381fdd2e5cf9faa76b369e6e79624c4d546e3e986f72c1a12`. Mirrored as 16 lossless base64 chunks in `Mtg 5 - Oct 30, 2026/CURRENT-v19-PPTX-lossless-segments/`; follow README there to reconstruct.
+- **Chapter 2:** `(draft) Chapter 2 - Literature Review - Nino v11 - Oct 28.docx`, 96,484 bytes; SHA256 `ef08d321545ad9c072db499e346713cd3e264a207a43b40958e18d9b3a68e5ad`. Stored directly in the corresponding Meeting 5 mirror directory.
+- Submission verified from GWU account to Dr Hao on October 30. Submission is not advisor approval. Prior v15, 29-slide material and earlier 1,058,428-byte v11 remain historical snapshots.
+
+### Session 6 new working deck
+- Folder: https://drive.google.com/drive/folders/1RLR6Wpbb9YQK-jKmhk6cpMSU_jZauz8D
+- `GWU Dr Hao - Session 6 - Nov 14, 2026 - v01 Working Advisor Update.pptx`, 26 slides, 17,984,795 bytes; SHA256 `a752f3110cb12d021567e43f91b3921c433366094c3be282e15dfc3e0799207b`.
+- Mirrored as 15 lossless base64 chunks in `Mtg 6 - Nov 14, 2026/CURRENT-v01-PPTX-lossless-segments/`. Gold Nov 14 and red Dec 05 Gantt markers shown. The deck is **planning-only as of 30 Oct**; it does not claim Nov results or new Hao feedback.
+- Both PPTX mirror copies are exact-byte reconstructible, but not single `.pptx` GitHub files due to connector transport limits.
+
+This is a **Session 5 / Session 6 scoped synchronization**, not whole-repository reconciliation. Historic status entries below are retained for traceability.
+
+---
+
 ## Session 5 deck v15 — October 29, 2026
 
 - Google Drive ASOT: https://docs.google.com/presentation/d/1MAbj3A1BSy-iGH1F4wir3OqeObsqdq0W/edit . Updated and renamed the current v14 deck in place; link and sharing retained.
