@@ -1,3 +1,14 @@
+## Session 5 deck v15 — October 29, 2026
+
+- Google Drive ASOT: https://docs.google.com/presentation/d/1MAbj3A1BSy-iGH1F4wir3OqeObsqdq0W/edit . Updated and renamed the current v14 deck in place; link and sharing retained.
+- Current mirror: `01 — Advisor & Administrative/01 — Advisor Updates & Meeting Records/Mtg 5 - Oct 30, 2026/CURRENT - GWU Dr Hao - Session 5 - Oct 30, 2026 - v15 - Carlo Methodology.pptx`. The former current v14 path is superseded; Git history retains it.
+- Chapter 2 narrative: **32 to 51 pages (+19)**. Current manuscript v11: 76 total = 10 front matter + 51 narrative + 15 References. Four pages of the change from the earlier 47-page rendering are double-spacing reflow, not newly authored text.
+- Bold emphasis: three civilian use cases (school wildfire situational awareness; flood information for hospital access; municipal reservoir and bloom monitoring), 20 expansion-support sources, 91 unique references. The 20-source package contains 15 new unique bibliography entries plus five already in v9.
+- Updated cover/progress/feedback/use-case text, native growth chart and embedded chart workbook, speaker notes and page references. All 29 slides retained. Carlo methodology slide, GWU cover design, hypotheses, media, and Oct 30/Nov 14 Gantt markers preserved. Manuscript and model unchanged; no new run or advisor submission.
+- Exact Drive readback verified: 4,012,068 bytes; SHA-256 `4438bdb60dea4c9bc168fc4d69e0e43a2178399d057767848b82bc938b470b73`; Git blob `88ce373bce8390c9a04678d1b3aed6415754e3b0`.
+
+---
+
 ## v11 formatting correction — October 29, 2026
 
 - Google Drive ASOT remains [v11 - Oct 28 cn.docx](https://docs.google.com/document/d/12ZWPsFc2J9PaHwML62_epcqR9W4eAnLz/edit), updated in place. Mirror uses the current Mtg 5 - Oct 30, 2026 folder.
