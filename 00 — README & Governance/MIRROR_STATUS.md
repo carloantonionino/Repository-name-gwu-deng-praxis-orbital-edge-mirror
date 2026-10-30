@@ -1,3 +1,13 @@
+## v11 focused-highlighting replacement — October 29, 2026
+
+- Google Drive ASOT: [v11 - Oct 28 cn.docx](https://docs.google.com/document/d/12ZWPsFc2J9PaHwML62_epcqR9W4eAnLz/edit). Replaced v10 in place with the same file ID and permissions.
+- Current mirror: `01 — Advisor & Administrative/01 — Advisor Updates & Meeting Records/Mtg 5 - Oct 31, 2026/v11 - Oct 28 cn.docx`. The v10 path is removed from the current tree; prior commits retain its history.
+- Tan shading is confined to the School Wildfire use-case heading through the closing paragraph of A Bounded Interpretation of Human and System Performance (printed pp. 21–33), plus exactly 20 individually selected expansion references. Other revision highlighting cleared.
+- Manuscript prose, reference text, comments, tables and pagination preserved; only review highlighting, cover legend and version metadata changed. 71 pages total / 47 Chapter 2 narrative pages. Slide deck unchanged in this scope.
+- Drive readback verified before mirroring: 743,033 bytes; SHA-256 `afb46794aaadd4564cec70ba48b8533b039841603d74551cd5d2ac53c25f49de`; Git blob `1d7832ab2df1a0576a7a7ed7da09e69cb2f853f2`.
+
+---
+
 ## Session 5 package synchronization — October 29, 2026
 
 Google Drive remains ASOT. Mirrored the verified October 28 v10 manuscript and full 29-slide GWU advisor deck for the October 30 briefing. The historical Meeting 5 folder name is retained.
