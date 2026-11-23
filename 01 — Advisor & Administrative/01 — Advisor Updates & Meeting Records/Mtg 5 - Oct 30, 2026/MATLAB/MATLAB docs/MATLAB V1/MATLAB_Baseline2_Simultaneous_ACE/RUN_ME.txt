@@ -1,0 +1,162 @@
+MATLAB BASELINE 2  -  SIMULTANEOUS OPS-SAT ACE
+Ground centric vs bounded orbital edge
+Source of truth: Work v9 Simultaneous OPS-SAT ACE, ASOT locked v03
+
+
+HOW TO RUN IT
+-------------
+1. Unzip this folder anywhere on your machine.
+2. Open MATLAB.
+3. In MATLAB, change the current folder to this one. Easiest way: in the
+   Current Folder pane, browse to the folder, right click it and choose
+   "Open" or "Add to Path".
+4. Type this and press enter:
+
+       run_all
+
+That is all. It prints the results, checks them against your workbook and
+writes figures and CSV files into the "output" folder beside this file.
+
+Expect it to take a few seconds.
+
+
+WHAT IT DOES
+------------
+It reads your 100 synchronized ACE observations and your Settings values from
+the data folder, then runs both architectures through the same link schedule:
+
+  Ground: observation arrives, waits for the link, the full volume goes down,
+          then ground processing, then delivery.
+  Edge:   observation arrives, onboard processing first, which is slower and
+          cuts the volume, then the link, then delivery to the same endpoint.
+
+Arrival times are replayed from the telemetry offsets. They are not generated.
+Only the service times are random, from your own generator and seed rule:
+
+       X0 = 54321 + 1000 * replication
+       Xn = mod(16807 * Xn-1, 2147483647)
+       U  = Xn / 2147483647
+       service time = -mean * ln(U)
+
+It then runs the five scenario cases, builds the latency histogram bins, and
+compares every number against the values exported from your workbook.
+
+
+WHAT IT CHECKS
+--------------
+Tolerance is 1e-6 absolute, the figure on your Validation tab.
+
+  - Ground latency, all 1,000 entity results
+  - Edge latency, all 1,000 entity results
+  - Queueing delay, both paths
+  - Deadline flags, both paths
+  - Per replication statistics, mean, median, P90, waits, shares
+  - Paired difference, standard deviation, standard error, both intervals
+  - Two sided t critical value
+  - All five scenarios, every replication
+  - Identical architectures return exactly zero
+  - Histogram bin counts
+
+The run ends with either ALL CHECKS PASSED or a list of what failed.
+
+
+WHAT IT WRITES
+--------------
+  output/results_replications.csv   per replication results
+  output/results_comparison.csv     paired difference and intervals
+  output/results_scenarios.csv      the five cases
+  output/results_bins.csv           histogram bin counts
+  output/fig1_latency_histogram.png Ground vs Edge distribution, 300 dpi
+  output/fig2_replications.png      mean latency per replication, 300 dpi
+  output/fig3_scenarios.png         scenario sweep, 300 dpi
+
+
+TOOLBOXES
+---------
+None. This runs in base MATLAB. The t critical value is computed from the
+inverse incomplete beta rather than tinv, so the Statistics and Machine
+Learning Toolbox is not needed. Nothing here needs Simulink or SimEvents.
+
+
+SCALING
+-------
+       run_all('reps', 50)
+
+runs the same model with more replications. Regression checks are skipped in
+that mode, because the workbook baseline is fixed at 10.
+
+Note on scaling entities: the cohort is fixed at the 100 accepted
+observations inside the bounded UTC window. Adding entities means either new
+ACE data with defensible simultaneity, or resampling the existing cohort,
+which would be a modelling decision rather than a code change. It has been
+left out on purpose.
+
+
+FILES
+-----
+  run_all.m              entry point, prints everything
+  des_load.m             reads settings and the cohort
+  des_run_rep.m          the simulation engine, one replication, both paths
+  des_replicate.m        runs all replications
+  des_rep_stats.m        per replication statistics
+  des_paired.m           paired difference and confidence intervals
+  des_tcrit.m            t critical without a toolbox
+  des_percentile.m       Excel compatible percentile
+  des_bins.m             histogram bins
+  des_scenarios.m        the five controlled cases
+  des_regression.m       regression against the workbook
+  des_check_scenarios.m  scenario regression
+  des_check_bins.m       histogram regression
+  des_write_results.m    CSV output
+  des_figures.m          300 dpi figures
+  des_read_numeric.m     CSV reader, works on every MATLAB release
+  des_read_keyvalue.m    CSV reader for name and value pairs
+  des_load_scenarios.m   reads the scenario list
+
+  data/ace_cohort.csv          the 100 observations and their parameters
+  data/ace_provenance.csv      source identifiers for each observation
+  data/settings.csv            the Settings values
+  data/scenarios.csv           the five cases from the Sensitivity tab
+  data/expected_*.csv          values exported from the workbook, used only
+                               for the regression checks
+
+
+IF SOMETHING GOES WRONG
+-----------------------
+"Cannot open ... settings.csv"
+    MATLAB is not in this folder. Change the current folder to the one
+    holding run_all.m, with the data folder beside it.
+
+"Undefined function run_all"
+    Same cause. Change the current folder, or right click the folder and
+    choose Add to Path.
+
+Anything else
+    Copy the full red error text from the Command Window and send it over.
+    It names the file and the line.
+
+
+STAGE 2, SIMEVENTS
+------------------
+VERIFIED. The simevents folder holds a working SimEvents model that
+reproduces this engine exactly, zero error on all 200 observations.
+
+To run it:
+
+    cd simevents
+    run_simevents
+
+Read simevents/SIMEVENTS_README.txt for how it is built and what to check
+if it ever fails.
+
+The verification chain is:
+
+    Excel workbook  ->  this engine  ->  SimEvents model
+                        9e-13 vs Excel   exactly 0 vs this engine
+
+
+STATUS
+------
+This reproduces the Excel model exactly. The numbers it produces are
+simulation output conditioned on the stated assumptions. They are not
+measurements and not a research finding.

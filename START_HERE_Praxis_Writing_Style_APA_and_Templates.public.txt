@@ -1,0 +1,53 @@
+PRAXIS WRITING STYLE, APA, FONTS, TEMPLATES & ADVISOR GUIDANCE
+Indexed November 13, 2026
+
+START HERE
+Green Praxis Drive > 00 — README & Governance >
+01 — Writing Style, APA, Templates & Praxis Guidance
+
+Folder:
+https://drive.google.com/drive/folders/1Bqf4nf9-BoS2--SMoi0Opg-Ne0xG1o6W
+
+1. Student_Praxis_Guidelines.pdf
+https://drive.google.com/file/d/1uLfMr-gimODhsVFrTK1mjQDlEFtsZ9OO/view
+The September 1 Hao packet's guidance on APA references, fonts, margins,
+page numbering, figure/table/formula labels and removal of final markup is
+on PDF page 5 (the slide itself is labeled "Slide 12 of 23").
+This is a short requirements checklist; it does not specify every font size
+or every APA rule. It also includes chapter-length guidance, advising
+requirements and the program's academic-integrity instructions.
+
+2. DEng Praxis Template - Online Programs Rev 2026.docx
+https://docs.google.com/document/d/1epagod6D2gvCABjCVeNm6cY41kcl2wzq/edit
+Original Word template supplied by Dr. Hao. Consult its actual Word styles
+and layout for manuscript structure, fonts, margins, headings, pagination,
+front matter, references, tables and figures. Do not substitute a generic
+student-paper layout for the Praxis template. Retain advisor instructions
+when resolving formatting questions.
+
+3. Advisor Update Deck(1).pptx
+https://docs.google.com/presentation/d/1akCj9xJXN4Ji_LQE3awFyz5aQDr5kO51/edit
+Original blank advisor-update presentation from the same packet. This is
+the source template, not Carlo's completed Session 6 presentation.
+
+SOURCE / CUSTODY
+Original email: Hanson Hao, "Praxis Resources", September 1, 2026, 4:14 p.m.
+as displayed in Carlo's forwarded message.
+NAC received the new forward on November 13, 2026 at 8:06 a.m. Pacific:
+
+The existing guideline PDF and Word-template files above were checked
+byte-for-byte against the September 1 attachments on November 13, 2026.
+Their existing Drive file IDs, filenames, contents and folder placement
+were retained. The guidance folder was renamed for discoverability.
+The original advisor-deck attachment was added to that folder unchanged.
+
+IMPORTANT RETRIEVAL NOTE
+The September 1 packet contains the three files listed here. It does not
+contain a separately named "Praxis Writing Style Guide". When Carlo refers
+to the writing-style guidance in this packet, inspect the guideline PDF
+page 5 and the official Word template, rather than searching indefinitely
+for a fourth attachment or inventing a replacement guide.
+
+APA 7 reference resource previously reviewed:
+https://guides.himmelfarb.gwu.edu/APA
+Project-specific citation instructions and advisor feedback remain relevant.

@@ -1,0 +1,104 @@
+{
+  "archive_date": "2026-11-11",
+  "historical_date": "2022-01-28",
+  "original_ace_rows": 100,
+  "original_unique_selected_receptions": 50,
+  "ace_rows_per_selected_reception": {
+    "2": 50
+  },
+  "returned_distinct_frames": 100,
+  "returned_rows": 100,
+  "matched_selected_receptions": 49,
+  "selected_receptions_not_in_returned_extract": 1,
+  "matched_ace_rows": 98,
+  "returned_frames_outside_original_selection": 51,
+  "returned_start_utc": "2022-01-28T17:43:19Z",
+  "returned_end_utc": "2022-01-28T17:54:19Z",
+  "selected_start_utc": "2022-01-28T17:42:49Z",
+  "selected_end_utc": "2022-01-28T17:54:09Z",
+  "by_receiver": {
+    "EA6TC": {
+      "selected_receptions": 23,
+      "selected_ace_rows": 46,
+      "matched_receptions": 23,
+      "returned_frames": 37
+    },
+    "DL5FAB VHF/UHF": {
+      "selected_receptions": 3,
+      "selected_ace_rows": 6,
+      "matched_receptions": 3,
+      "returned_frames": 18
+    },
+    "EU1XX": {
+      "selected_receptions": 22,
+      "selected_ace_rows": 44,
+      "matched_receptions": 21,
+      "returned_frames": 27
+    },
+    "ESA Academy @ESTEC": {
+      "selected_receptions": 2,
+      "selected_ace_rows": 4,
+      "matched_receptions": 2,
+      "returned_frames": 18
+    }
+  },
+  "unmatched_selected": [
+    {
+      "source_json_row_1based": 203,
+      "observer_as_recorded": "EU1XX-KO33ru",
+      "observer_match_name": "EU1XX",
+      "source_route": "sids",
+      "reception_utc": "2022-01-28T17:42:49Z",
+      "ace_row_count": 2,
+      "ace_entities": "1|2",
+      "archived_frame_sha256": "a09a5214b193b4345248eaeb1a923d66913b109aca0ef9d1cc42f1be89b618b0",
+      "original_station_id": "",
+      "original_observation_id": "",
+      "match_status": "NOT_IN_RETURNED_EXTRACT",
+      "returned_frame_id": "",
+      "returned_observation_id": "",
+      "returned_lat": "",
+      "returned_lon": "",
+      "match_rule": "Exact UTC reception time + source route + observer name; Network observation ID also checked",
+      "payload_identity_status": "Archived payload verified against saved SHA256; returned payload not independently checked (telemetry API requires authentication)"
+    }
+  ],
+  "observation_metadata_differences": [
+    {
+      "observation_id": "5369438",
+      "station_id": 2504,
+      "field": "latitude",
+      "observation_field": 49.8590291,
+      "embedded_client_metadata": 49.859291,
+      "action": "Preserve both; no silent replacement. Assess geometry sensitivity and confirm semantics if material."
+    },
+    {
+      "observation_id": "5375671",
+      "station_id": 839,
+      "field": "latitude",
+      "observation_field": 52.217,
+      "embedded_client_metadata": 52.2174381,
+      "action": "Preserve both; no silent replacement. Assess geometry sensitivity and confirm semantics if material."
+    },
+    {
+      "observation_id": "5375671",
+      "station_id": 839,
+      "field": "longitude",
+      "observation_field": 4.423,
+      "embedded_client_metadata": 4.4228758,
+      "action": "Preserve both; no silent replacement. Assess geometry sensitivity and confirm semantics if material."
+    },
+    {
+      "observation_id": "5375671",
+      "station_id": 839,
+      "field": "elevation_m",
+      "observation_field": 5,
+      "embedded_client_metadata": 1,
+      "action": "Preserve both; no silent replacement. Assess geometry sensitivity and confirm semantics if material."
+    }
+  ],
+  "integrity_errors": [],
+  "join_caution": "Metadata reconciliation; original archive payload hashes checked. New frame payload contents were not independently compared because the telemetry API returned 401.",
+  "source_license": "CC BY-SA 4.0, per Alfredos Damkalis correspondence",
+  "research_scope": "Successful historical reception evidence. Does not establish attempted transmissions, packet loss, effective throughput, continuous availability, or modeled edge-processing outcomes."
+}

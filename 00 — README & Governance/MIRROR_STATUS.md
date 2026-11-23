@@ -1,3 +1,27 @@
+# Green Praxis mirror
+
+## November 23, 2026 reconciliation
+
+The Green Google Drive folder is the working source for the GWU D.Eng. Praxis. This snapshot accounts for 408 Drive file entries in 89 subfolders. The inventory lists the public placements, byte counts and SHA-256 checksums. Two Drive entries with the same path and identical bytes share one Git file.
+
+| Form | Drive entries |
+| --- | ---: |
+| Git original | 324 |
+| GitHub release original | 3 |
+| Office export | 8 |
+| Public copy | 4 |
+| Drive only | 69 |
+
+The active materials include Chapter 2 v18, its master traceability register, the Session 6 v11 advisor deck, and the Session 7 Chapter 3 MATLAB overview and evidence table. The November 14 package contains the earlier v10 deck as assembled in Drive. The separately filed v11 deck is the later version.
+
+The two large media originals are downloadable from the release linked in their Drive-equivalent folders. Native Google documents and slides use Word and PowerPoint exports. Four public copies omit private correspondence or mailbox links. The public-source notes give data credits and describe reference-only material. The prior GitHub baseline remains in Git history; unique historical artifacts are retained under the archive.
+
+[Public file inventory](GREEN_MIRROR_INVENTORY.tsv) · [Source and access notes](PUBLIC_SOURCE_NOTES.md)
+
+---
+
+## Historical synchronization records
+
 ## CURRENT: Session 5 submission and Session 6 working deck — 30 October 2026
 
 **Authority:** Green Google Drive, not the most recent Git commit timestamp. This entry supersedes the historical "current v15" language below for the Session 5 deck.
@@ -177,3 +201,4 @@ Third-party literature, institutional templates/guidelines, and other externally
 ## Mirror principle
 
 Google Drive remains the active collaboration/working environment. This GitHub repository is a controlled mirror for continuity, configuration control, verification, and reproducibility; Google Drive remains the authoritative working source.
+

@@ -1,0 +1,14 @@
+entity,parameter,value,unit,evidence_class,validity,source_url,limitation
+OPS-SAT-1,NORAD,44878,catalog_number,published,mission_identity,https://www.esa.int/articles/about-us/directorates/operations/calling-radio-amateurs-help-find-ops-sat,not a radio performance value
+OPS-SAT-1,transceiver,GomSpace NanoCom AX100,model,published,mission_identity,https://www.esa.int/articles/about-us/directorates/operations/calling-radio-amateurs-help-find-ops-sat,operational flight settings for Jan 2022 not recovered
+OPS-SAT-1,downlink_frequency,437.2,MHz,published,mission_characteristic,https://www.esa.int/articles/about-us/directorates/operations/calling-radio-amateurs-help-find-ops-sat,does not establish received power
+OPS-SAT-1,modulation,GMSK,text,published,mission_characteristic,https://www.esa.int/articles/about-us/directorates/operations/calling-radio-amateurs-help-find-ops-sat,not measured modulation performance
+OPS-SAT-1,baudrate,9600,baud,published,mission_characteristic,https://www.esa.int/articles/about-us/directorates/operations/calling-radio-amateurs-help-find-ops-sat,not measured net application throughput
+NanoCom AX100,adjustable_transmit_power_min,24,dBm,manufacturer_product_page,equipment_capability,https://gomspace.com/product/nanocom-ax100/,actual 2022 flight setting unknown
+NanoCom AX100,adjustable_transmit_power_max,30,dBm,manufacturer_product_page,equipment_capability,https://gomspace.com/product/nanocom-ax100/,actual 2022 flight setting unknown
+OPS-SAT-1,visualization_assumed_transmit_power,27,dBm,modeled_sensitivity_midpoint,illustration_only,https://gomspace.com/product/nanocom-ax100/,NOT historical measurement; code assigns -3 dBW
+ESTEC_839,antenna_type,Cross Yagi UHF,text,current_satnogs_profile,present_day_profile,https://network.satnogs.org/users/esa_academy/,2022 antenna model orientation gain and tracking unknown
+DL5FAB_2504,antenna_type,Turnstile UHF,text,current_satnogs_profile,present_day_profile,https://network.satnogs.org/stations/2504/,2022 antenna model orientation gain and tracking unknown
+EA6TC_JM19jn,antenna_type,unknown,text,not_verified,2022_unknown,,Maidenhead grid does not establish historical hardware
+EU1XX_KO33ru,antenna_type,unknown,text,not_verified,2022_unknown,,Maidenhead grid does not establish historical hardware
+ALL_visualized_antennas,bloom_pattern,default Gaussian,text,software_default,visualization_only,https://www.mathworks.com/help/satcom/ref/satcom.satellitescenario.transmitter.html,teardrop not measured antenna pattern or RF received-power footprint

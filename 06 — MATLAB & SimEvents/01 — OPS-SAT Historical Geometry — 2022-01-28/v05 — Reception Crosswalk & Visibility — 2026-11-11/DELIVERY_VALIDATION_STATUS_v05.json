@@ -1,0 +1,21 @@
+{
+  "date": "2026-11-11",
+  "input_integrity": "PASS",
+  "unchanged_original_inputs": [
+    "ACE_Observer_Witnesses_100_v01.csv",
+    "Ground_Site_Evidence_v01.csv",
+    "OPS_SAT_44878_SELECTED_2022-01-28.tle"
+  ],
+  "metadata_49_of_50_receptions_98_of_100_ace_rows": "PASS",
+  "explicit_unmatched_entities": [
+    "1",
+    "2"
+  ],
+  "conflicting_metadata_fields": 4,
+  "flagged_network_receptions": 5,
+  "flagged_network_ace_rows": 10,
+  "matlab_parser_lint": "PASS - 3 files, zero reported errors",
+  "native_matlab_unit_tests": "NOT_RUN_NO_MATLAB_RUNTIME",
+  "native_matlab_visibility_run": "NOT_RUN_NO_MATLAB_RUNTIME",
+  "python_sgp4_reference": "COMPLETED - 585 checks over 42 explicit configurations"
+}

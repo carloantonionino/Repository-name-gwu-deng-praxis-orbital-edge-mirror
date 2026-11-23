@@ -1,0 +1,5 @@
+observation_id,station_id,field,observation_field,embedded_client_metadata,action
+5369438,2504,latitude,49.8590291,49.859291,Preserve both; no silent replacement. Assess geometry sensitivity and confirm semantics if material.
+5375671,839,latitude,52.217,52.2174381,Preserve both; no silent replacement. Assess geometry sensitivity and confirm semantics if material.
+5375671,839,longitude,4.423,4.4228758,Preserve both; no silent replacement. Assess geometry sensitivity and confirm semantics if material.
+5375671,839,elevation_m,5,1,Preserve both; no silent replacement. Assess geometry sensitivity and confirm semantics if material.

@@ -1,0 +1,16 @@
+OPS-SAT 44878 — Historical ACE Geometry — MATLAB R2026a+
+
+Unzip the package. In MATLAB, set Current Folder to the unzipped folder.
+
+ver
+which satelliteScenario -all
+which satellite -all
+praxis_ops_sat_historical_geometry_v02
+
+Expected: 100 accepted witnesses, 9 checksum-verified TLE sets; selected 2022-01-28 ~10:54:31 UTC.
+Only recorded-ID stations 839 and 2504 are used by default.
+Viewer shows one OPS-SAT; access-interval CSVs and
+ID_Verified_Reception_Geometry_Check_v02.csv are written beside script.
+
+If MATLAB reports missing satelliteScenario, inspect licensed products using ver; this geometry does not require rerunning the DES.
+DO NOT copy predicted access windows into the locked ACE DES until witness-time validation.

@@ -1,0 +1,10 @@
+Item,Date_or_window,Value_or_role,Status,Source,Restriction
+Geomagnetic event,2023-04-23 17:37 UTC,G4 storm start,Observed published,https://swpc-drupal.woc.noaa.gov/news/update-g4-storm-observed-sunday-april-23-2023,Not a measured RF fade
+Severe K index,2023-04-23 19:44 UTC,NOAA K=8 alert,Observed published,https://www.ngdc.noaa.gov/stp/space-weather/swpc-products/weekly_reports/PRFs_of_SGD/2023/04/prf2486.pdf,Timestamped alert not a receive-power observation
+G4 storm study,2023-04-23 18:00-21:00 UTC,Kp reached 8+,Peer-reviewed published,https://doi.org/10.1051/swsc/2025001,Regional ionospheric response not unique OPS-SAT loss
+NASA OMNI,2023-04-23 18:00-21:00 UTC,1 minute solar wind and geomagnetic context,Acquisition needed,https://omniweb.gsfc.nasa.gov/form/omni_min.html,No OMNI samples packaged here
+OPS-SAT 2023 orbital elements,2023-04-23 18:00-21:00 UTC,NORAD 44878,Acquisition needed,https://satdb.ethz.ch/,2022 TLE explicitly disallowed
+SatNOGS OPS-SAT 2023 reception evidence,2023-04-23 18:00-21:00 UTC,Network and SiDS observations,Acquisition and crosswalk needed,https://network.satnogs.org/,No verified matches packaged here
+OPSSAT-AD 2023 segments,2023-04-23 18:00-21:00 UTC,2023 onboard AI ML evidence,Not demonstrated,https://zenodo.org/records/15108715,Do not call 2022 workload 2023 contemporaneous
+Baseline2 link settings,2022-01-28 17:42-17:55 UTC,100 Mbps 600 up 120 down 300 MB 25 percent output,Verified original model settings,Green Praxis Baseline 2 settings.csv,Synthetic not observed OPS-SAT RF
+Storm scenario link factor,Counterfactual,50 percent of original rate,ASSUMPTION NOT EMPIRICAL,User-adjustable MATLAB RUN_G4_COMPARE_v01,Not mapped from G4 index

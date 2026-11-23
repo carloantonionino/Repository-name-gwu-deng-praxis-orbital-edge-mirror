@@ -1,0 +1,198 @@
+{
+  "record_date_pacific": "2026-10-29",
+  "recorded_utc": "2026-10-30T02:25:41.926115+00:00",
+  "subject": "Session 5 advisor deck v16 package repair",
+  "author": "Carlo Antonio Nino",
+  "authority": "Google Drive; GitHub is a downstream mirror",
+  "repair_category": "Internal PPTX identifiers and version metadata; no authored slide-content changes",
+  "source": {
+    "drive_file_id": "1MAbj3A1BSy-iGH1F4wir3OqeObsqdq0W",
+    "version": "v15",
+    "sha256": "94ddedec2376c41fb50bbc3d0a4d9619b70963695e9b477e58caa9b08f954b4f",
+    "git_blob_sha1": "81c38597e17f7d34766ff96552b2db9b7eb2efaf",
+    "bytes": 2352417,
+    "desktop_failure": "User supplied two PowerPoint cannot-read screenshots; attached copies and Drive source were byte-identical"
+  },
+  "archived_source": {
+    "drive_file_id": "1ZveTdcGPpI9KZ2bbNZBA9Qs6WyBWQR6o",
+    "filename": "SUPERSEDED - Nino GWU Advisor Update - 30 Oct 2026 - v15 - PowerPoint read error.pptx"
+  },
+  "corrected_pptx": {
+    "drive_file_id": "1MAbj3A1BSy-iGH1F4wir3OqeObsqdq0W",
+    "filename": "Nino GWU Advisor Update - 30 Oct 2026 - v16.pptx",
+    "bytes": 2352394,
+    "sha256": "f52c7362b147a3fe6a6af603c424b2c6cd4e83c1209a03f7e6586104abf2523d",
+    "git_blob_sha1": "a146c8ba49370b594a3f9ed0467f6a8c29d6af37",
+    "exact_drive_readback_verified": true
+  },
+  "pdf_backup": {
+    "drive_file_id": "1X3eS64sfgfXsGJSSrqe3JBX1-6m3rAbA",
+    "filename": "Nino GWU Advisor Update - 30 Oct 2026 - v16.pdf",
+    "bytes": 1899551,
+    "sha256": "0004b72f4c89f6ad1944109c93859212ed2046ee15a2bd9d8d45381afc3cee9b",
+    "git_blob_sha1": "0e61446cc852a6d1d4aff6fc282229094921e4c2",
+    "exact_drive_readback_verified": true
+  },
+  "changed_package_parts": [
+    "docProps/core.xml",
+    "ppt/charts/chart1.xml",
+    "ppt/charts/chart2.xml",
+    "ppt/presentation.xml",
+    "ppt/slideMasters/carlo_slideMaster1.xml",
+    "ppt/slides/slide3.xml"
+  ],
+  "unchanged_package_parts": 244,
+  "identifier_corrections": [
+    {
+      "axis_identifier_corrections": [
+        {
+          "part": "ppt/charts/chart1.xml",
+          "element": "axId",
+          "old": -2068027336,
+          "new": 100001001
+        },
+        {
+          "part": "ppt/charts/chart1.xml",
+          "element": "axId",
+          "old": -2113994440,
+          "new": 100001002
+        },
+        {
+          "part": "ppt/charts/chart1.xml",
+          "element": "axId",
+          "old": -2068027336,
+          "new": 100001001
+        },
+        {
+          "part": "ppt/charts/chart1.xml",
+          "element": "crossAx",
+          "old": -2113994440,
+          "new": 100001002
+        },
+        {
+          "part": "ppt/charts/chart1.xml",
+          "element": "axId",
+          "old": -2113994440,
+          "new": 100001002
+        },
+        {
+          "part": "ppt/charts/chart1.xml",
+          "element": "crossAx",
+          "old": -2068027336,
+          "new": 100001001
+        },
+        {
+          "part": "ppt/charts/chart2.xml",
+          "element": "axId",
+          "old": -2068027336,
+          "new": 100002001
+        },
+        {
+          "part": "ppt/charts/chart2.xml",
+          "element": "axId",
+          "old": -2113994440,
+          "new": 100002002
+        },
+        {
+          "part": "ppt/charts/chart2.xml",
+          "element": "axId",
+          "old": -2068027336,
+          "new": 100002001
+        },
+        {
+          "part": "ppt/charts/chart2.xml",
+          "element": "crossAx",
+          "old": -2113994440,
+          "new": 100002002
+        },
+        {
+          "part": "ppt/charts/chart2.xml",
+          "element": "axId",
+          "old": -2113994440,
+          "new": 100002002
+        },
+        {
+          "part": "ppt/charts/chart2.xml",
+          "element": "crossAx",
+          "old": -2068027336,
+          "new": 100002001
+        }
+      ]
+    },
+    {
+      "imported_master_id": {
+        "old": "2147483669",
+        "new": "2147483670"
+      }
+    },
+    {
+      "imported_layout_ids": [
+        {
+          "old": "2147483649",
+          "new": "2147483671"
+        },
+        {
+          "old": "2147483650",
+          "new": "2147483672"
+        },
+        {
+          "old": "2147483651",
+          "new": "2147483673"
+        },
+        {
+          "old": "2147483652",
+          "new": "2147483674"
+        },
+        {
+          "old": "2147483653",
+          "new": "2147483675"
+        },
+        {
+          "old": "2147483654",
+          "new": "2147483676"
+        },
+        {
+          "old": "2147483655",
+          "new": "2147483677"
+        },
+        {
+          "old": "2147483656",
+          "new": "2147483678"
+        },
+        {
+          "old": "2147483657",
+          "new": "2147483679"
+        },
+        {
+          "old": "2147483658",
+          "new": "2147483680"
+        },
+        {
+          "old": "2147483659",
+          "new": "2147483681"
+        }
+      ]
+    },
+    {
+      "slide_3_textbox_id": {
+        "old": 114,
+        "new": 125
+      }
+    }
+  ],
+  "validation": {
+    "slide_count": 29,
+    "xml_package_integrity": "PASS; zero findings",
+    "independent_reader": "Walnut .NET/OpenXML-backed PptxReader: original fails on negative chart axis ID; final v16 passes",
+    "render_engine": "LibreOffice Impress PDF export, compared at 1.25 scale using PyMuPDF",
+    "rendered_slide_count": 29,
+    "pixel_identical_slides_to_original_render": 29,
+    "slide_text_preserved": true,
+    "speaker_notes_preserved": true,
+    "chart_values_preserved": true,
+    "embedded_workbooks_preserved": true,
+    "all_media_and_fonts_preserved": true,
+    "native_windows_powerpoint_tested": false
+  },
+  "scope_limit": "Internal format repair only; no new MATLAB execution, literature review, or advisor submission."
+}

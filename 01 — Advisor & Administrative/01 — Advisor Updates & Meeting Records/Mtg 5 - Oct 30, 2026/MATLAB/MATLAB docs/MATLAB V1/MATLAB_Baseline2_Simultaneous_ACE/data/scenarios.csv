@@ -1,0 +1,6 @@
+case,raw_mb,ground_mean_s,edge_mean_s,output_fraction
+PRIMARY_300MB,300,4,12,0.25
+SMALL_1MB,1,4,12,0.25
+NO_REDUCTION,300,4,12,1
+SLOW_EDGE_60S,300,4,60,0.25
+IDENTICAL,300,0,0,1

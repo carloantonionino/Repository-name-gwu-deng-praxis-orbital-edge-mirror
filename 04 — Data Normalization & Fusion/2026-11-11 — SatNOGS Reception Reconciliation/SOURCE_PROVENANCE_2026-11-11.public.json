@@ -1,0 +1,292 @@
+{
+  "archive_date": "2026-11-11",
+  "raw_archive_folder": {
+    "id": "1vS9WF7N0SEqsI8RiFzKI3ryKjyTkkIqr",
+    "url": "https://drive.google.com/drive/folders/1vS9WF7N0SEqsI8RiFzKI3ryKjyTkkIqr"
+  },
+  "reconciliation_folder": {
+    "success": true,
+    "id": "1KvK7mblIp36CN9xu-cUeKtYxBGkDJo5-",
+    "url": "https://drive.google.com/drive/folders/1KvK7mblIp36CN9xu-cUeKtYxBGkDJo5-",
+    "title": "2026-11-11 — SatNOGS Reception Reconciliation",
+    "parent_id": "1mQyf8JDYlMaHYPwuRtnuj-07FuE8s-LO"
+  },
+  "network_observations_folder": {
+    "success": true,
+    "id": "1NgOhr-vk56f_qcMYo3N9cY5X8ynRvf66",
+    "url": "https://drive.google.com/drive/folders/1NgOhr-vk56f_qcMYo3N9cY5X8ynRvf66",
+    "title": "Network Observations — Retrieved 2026-11-11",
+    "parent_id": "1vS9WF7N0SEqsI8RiFzKI3ryKjyTkkIqr"
+  },
+  "raw_attachment": {
+    "original_filename": "ops-sat_sids_frames.csv",
+    "byte_size": 7347,
+    "delimiter": "semicolon",
+    "source": "Email attachment from Alfredos (fredy) Damkalis, Libre Space Foundation",
+    "original_bytes_preserved": true,
+    "drive_file": {
+      "accepted_input": "file_uri",
+      "success": true,
+      "id": "1zDHXBek9tVPhFR5Kvl_J8yFZDTmSCkec",
+      "title": "ops-sat_sids_frames.csv",
+      "file_name": "ops-sat_sids_frames.csv",
+      "mime_type": "text/csv",
+      "url": "https://drive.google.com/file/d/1zDHXBek9tVPhFR5Kvl_J8yFZDTmSCkec/view?usp=drivesdk",
+      "parent_id": "1vS9WF7N0SEqsI8RiFzKI3ryKjyTkkIqr",
+      "structuredContent": {
+        "accepted_input": "file_uri",
+        "success": true,
+        "id": "1zDHXBek9tVPhFR5Kvl_J8yFZDTmSCkec",
+        "title": "ops-sat_sids_frames.csv",
+        "file_name": "ops-sat_sids_frames.csv",
+        "mime_type": "text/csv",
+        "url": "https://drive.google.com/file/d/1zDHXBek9tVPhFR5Kvl_J8yFZDTmSCkec/view?usp=drivesdk",
+        "parent_id": "1vS9WF7N0SEqsI8RiFzKI3ryKjyTkkIqr"
+      }
+    }
+  },
+  "existing_input_files": [
+    {
+      "id": "1ylgCxiTmuSqYrBGxrAUCHnd3Him7abd4",
+      "name": "OPS_SAT_ACE_100_Witness_Qualification_Register_v01.csv",
+      "url": "https://drive.google.com/file/d/1ylgCxiTmuSqYrBGxrAUCHnd3Him7abd4/view?usp=drivesdk"
+    },
+    {
+      "id": "19W8dHZA8_fbBlj5wPc1O26CevKk8ofZp",
+      "name": "ACE_Observer_Witnesses_100_v01.csv",
+      "url": "https://drive.google.com/file/d/19W8dHZA8_fbBlj5wPc1O26CevKk8ofZp/view?usp=drivesdk"
+    },
+    {
+      "id": "1CsSRO5mp5QCQxbWhVcjVXRzoInHFOa9x",
+      "name": "Ground_Site_Evidence_v01.csv",
+      "url": "https://drive.google.com/file/d/1CsSRO5mp5QCQxbWhVcjVXRzoInHFOa9x/view?usp=drivesdk"
+    },
+    {
+      "id": "15mg63gRJbCTC2UXwrwpANn3xLW4Xyp8o",
+      "name": "README_Observer_Qualification_v01.md",
+      "url": "https://drive.google.com/file/d/15mg63gRJbCTC2UXwrwpANn3xLW4Xyp8o/view?usp=drivesdk"
+    },
+    {
+      "id": "1H2EZ-HktZn2zLKIqqmWKHFd6ORs0OiSy",
+      "name": "OPS-SAT_2022-01-26_to_2022-01-29_COMPLETE.json",
+      "url": "https://drive.google.com/file/d/1H2EZ-HktZn2zLKIqqmWKHFd6ORs0OiSy/view?usp=drivesdk"
+    }
+  ],
+  "api_sources": [
+    "https://network.satnogs.org/api/observations/5369438/",
+    "https://network.satnogs.org/api/observations/5375671/"
+  ],
+  "telemetry_payload_check": {
+    "url": "https://db.satnogs.org/api/telemetry/131566832/",
+    "http_status": 401,
+    "result": "Unauthenticated request rejected. No payload-level identity claim made for the emailed frame IDs."
+  },
+  "license": {
+    "data": "CC BY-SA 4.0 as specified in provider reply",
+    "url": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "attribution": "SatNOGS Network / SatNOGS DB, Libre Space Foundation; supplied extract and clarification by Alfredos (fredy) Damkalis.",
+    "correspondence": "Preserved research correspondence; the stated public data license is not applied to the private email itself."
+  },
+  "handling": "Original ACE/source files and model unchanged. All crosswalks, extracted summaries and reports are new files dated 2026-11-11.",
+  "retrieved_at_utc": "2026-11-11T08:35:54.125056+00:00",
+  "observations": [
+    {
+      "file": "observations/observation_5369438.json",
+      "api_url": "https://network.satnogs.org/api/observations/5369438/",
+      "bytes": 5318,
+      "sha256": "21728d96d04b9fe930099d3bd5ce80ef85a5a99fef17d8cc0b4798d0736ba28b"
+    },
+    {
+      "file": "observations/observation_5375671.json",
+      "api_url": "https://network.satnogs.org/api/observations/5375671/",
+      "bytes": 5275,
+      "sha256": "1b9b7b44677834a9ff39c1c0faa7dbc47c60630920a83b070841c9f05bfacaeb"
+    }
+  ],
+  "reconciliation_summary": {
+    "archive_date": "2026-11-11",
+    "historical_date": "2022-01-28",
+    "original_ace_rows": 100,
+    "original_unique_selected_receptions": 50,
+    "ace_rows_per_selected_reception": {
+      "2": 50
+    },
+    "returned_distinct_frames": 100,
+    "returned_rows": 100,
+    "matched_selected_receptions": 49,
+    "selected_receptions_not_in_returned_extract": 1,
+    "matched_ace_rows": 98,
+    "returned_frames_outside_original_selection": 51,
+    "returned_start_utc": "2022-01-28T17:43:19Z",
+    "returned_end_utc": "2022-01-28T17:54:19Z",
+    "selected_start_utc": "2022-01-28T17:42:49Z",
+    "selected_end_utc": "2022-01-28T17:54:09Z",
+    "by_receiver": {
+      "EA6TC": {
+        "selected_receptions": 23,
+        "selected_ace_rows": 46,
+        "matched_receptions": 23,
+        "returned_frames": 37
+      },
+      "DL5FAB VHF/UHF": {
+        "selected_receptions": 3,
+        "selected_ace_rows": 6,
+        "matched_receptions": 3,
+        "returned_frames": 18
+      },
+      "EU1XX": {
+        "selected_receptions": 22,
+        "selected_ace_rows": 44,
+        "matched_receptions": 21,
+        "returned_frames": 27
+      },
+      "ESA Academy @ESTEC": {
+        "selected_receptions": 2,
+        "selected_ace_rows": 4,
+        "matched_receptions": 2,
+        "returned_frames": 18
+      }
+    },
+    "unmatched_selected": [
+      {
+        "source_json_row_1based": 203,
+        "observer_as_recorded": "EU1XX-KO33ru",
+        "observer_match_name": "EU1XX",
+        "source_route": "sids",
+        "reception_utc": "2022-01-28T17:42:49Z",
+        "ace_row_count": 2,
+        "ace_entities": "1|2",
+        "archived_frame_sha256": "a09a5214b193b4345248eaeb1a923d66913b109aca0ef9d1cc42f1be89b618b0",
+        "original_station_id": "",
+        "original_observation_id": "",
+        "match_status": "NOT_IN_RETURNED_EXTRACT",
+        "returned_frame_id": "",
+        "returned_observation_id": "",
+        "returned_lat": "",
+        "returned_lon": "",
+        "match_rule": "Exact UTC reception time + source route + observer name; Network observation ID also checked",
+        "payload_identity_status": "Archived payload verified against saved SHA256; returned payload not independently checked (telemetry API requires authentication)"
+      }
+    ],
+    "observation_metadata_differences": [
+      {
+        "observation_id": "5369438",
+        "station_id": 2504,
+        "field": "latitude",
+        "observation_field": 49.8590291,
+        "embedded_client_metadata": 49.859291,
+        "action": "Preserve both; no silent replacement. Assess geometry sensitivity and confirm semantics if material."
+      },
+      {
+        "observation_id": "5375671",
+        "station_id": 839,
+        "field": "latitude",
+        "observation_field": 52.217,
+        "embedded_client_metadata": 52.2174381,
+        "action": "Preserve both; no silent replacement. Assess geometry sensitivity and confirm semantics if material."
+      },
+      {
+        "observation_id": "5375671",
+        "station_id": 839,
+        "field": "longitude",
+        "observation_field": 4.423,
+        "embedded_client_metadata": 4.4228758,
+        "action": "Preserve both; no silent replacement. Assess geometry sensitivity and confirm semantics if material."
+      },
+      {
+        "observation_id": "5375671",
+        "station_id": 839,
+        "field": "elevation_m",
+        "observation_field": 5,
+        "embedded_client_metadata": 1,
+        "action": "Preserve both; no silent replacement. Assess geometry sensitivity and confirm semantics if material."
+      }
+    ],
+    "integrity_errors": [],
+    "join_caution": "Metadata reconciliation; original archive payload hashes checked. New frame payload contents were not independently compared because the telemetry API returned 401.",
+    "source_license": "CC BY-SA 4.0, per Alfredos Damkalis correspondence",
+    "research_scope": "Successful historical reception evidence. Does not establish attempted transmissions, packet loss, effective throughput, continuous availability, or modeled edge-processing outcomes."
+  },
+  "file_hashes": [
+    {
+      "file": "derived/ACE_100_Row_Reception_Map_2026-11-11.csv",
+      "bytes": 9946,
+      "sha256": "b955351d809773967018531feeb669f9867fce2277fba75d1ce31d7ab1648646"
+    },
+    {
+      "file": "derived/Network_Observation_Artifact_Links_2026-11-11.csv",
+      "bytes": 8106,
+      "sha256": "df402bce3136e983d54ad45c8b839ec47986562c072121660e084cb29a5ad348"
+    },
+    {
+      "file": "derived/Network_Observation_Metadata_Differences_2026-11-11.csv",
+      "bytes": 639,
+      "sha256": "77fe29c7972a86f84638169b9544868793766978b11b0d726411cc85b3ee9689"
+    },
+    {
+      "file": "derived/Network_Observation_Summary_2026-11-11.csv",
+      "bytes": 1549,
+      "sha256": "707fa92aaa3736d798215e389fbb25a1edb0dd222433692f0a2a94af6d2c5699"
+    },
+    {
+      "file": "derived/Returned_100_Frames_Reconciliation_2026-11-11.csv",
+      "bytes": 8317,
+      "sha256": "18c1712d213e146a68ab9c0864214b99c424824298ab554a08a3ebab32dee59a"
+    },
+    {
+      "file": "derived/Selected_50_Receptions_Crosswalk_2026-11-11.csv",
+      "bytes": 19959,
+      "sha256": "2769b1ba2bd286b91c413c246d6e45ddf080d631ea02a81ff117af373e7e0767"
+    },
+    {
+      "file": "derived/Unmatched_Selected_Receptions_2026-11-11.csv",
+      "bytes": 676,
+      "sha256": "a30f863445270383ae3dc40fccdab936bd1dab67d9eec78dd816762bd07dacfa"
+    },
+    {
+      "file": "inputs/ACE_Observer_Witnesses_100_v01.csv",
+      "bytes": 10086,
+      "sha256": "cd275e1fbc1b1f3fb21cb1ac6580cc6ef74efb77c59f5542ebf4b6a5c66731b3"
+    },
+    {
+      "file": "inputs/Ground_Site_Evidence_v01.csv",
+      "bytes": 1132,
+      "sha256": "6c02ce1abccbb8e27c67b4bc6d1f0ea4448f6e77b45db52db6dcf9e65a1b8d3b"
+    },
+    {
+      "file": "inputs/OPS-SAT_2022-01-26_to_2022-01-29_COMPLETE.json",
+      "bytes": 366147,
+      "sha256": "7451f659bb863938199724708670b44af95acbfded3eb393aa5073264f41cca0"
+    },
+    {
+      "file": "inputs/OPS_SAT_ACE_100_Witness_Qualification_Register_v01.csv",
+      "bytes": 30843,
+      "sha256": "b2f8220d555844448a3ee4f6dbdddcb7c20e43f68ce30f89903caca78a0dc3fb"
+    },
+    {
+      "file": "inputs/README_Observer_Qualification_v01.md",
+      "bytes": 1940,
+      "sha256": "c848cd9caca59735f3c392d7b2eac049d7fa6a7d1aac0d2fe2246eb98551d3de"
+    },
+    {
+      "file": "observations/observation_5369438.json",
+      "bytes": 5318,
+      "sha256": "21728d96d04b9fe930099d3bd5ce80ef85a5a99fef17d8cc0b4798d0736ba28b"
+    },
+    {
+      "file": "observations/observation_5375671.json",
+      "bytes": 5275,
+      "sha256": "1b9b7b44677834a9ff39c1c0faa7dbc47c60630920a83b070841c9f05bfacaeb"
+    },
+    {
+      "file": "reconcile_satnogs.py",
+      "bytes": 11263,
+      "sha256": "7b18d6a7147b382232cdcaa9542b3acf7b236682af3d7abe393fff0dbc982610"
+    },
+    {
+      "file": "sources/ops-sat_sids_frames.csv",
+      "bytes": 7347,
+      "sha256": "0c6385aae2c5a8822d64311004222b2cc171aa17085a7490bf4a506d011be797"
+    }
+  ]
+}

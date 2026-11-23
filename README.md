@@ -6,6 +6,12 @@ This repository is the public GitHub mirror of Carlo Antonio Nino's George Washi
 
 > **Modeling Orbital Edge Processing in Degraded Communications**
 
+## Current mirror
+
+The November 23, 2026 snapshot includes Chapter 2 v18, the Session 6 v11 advisor presentation and the Session 7 Chapter 3 MATLAB model overview. The reconciliation identifies direct originals, Office exports, release downloads and public copies.
+
+[Mirror status and file inventory](00%20%E2%80%94%20README%20%26%20Governance/MIRROR_STATUS.md)
+
 ## Purpose
 
 This repository provides an independent public copy of the Praxis research structure and supporting artifacts so that reviewers, collaborators, and future researchers can inspect the work without depending on a single cloud provider.
@@ -71,3 +77,4 @@ Advisor: **Dr. Hanson Hao**
 ---
 
 Repository initialized: 2026-10-02.
+

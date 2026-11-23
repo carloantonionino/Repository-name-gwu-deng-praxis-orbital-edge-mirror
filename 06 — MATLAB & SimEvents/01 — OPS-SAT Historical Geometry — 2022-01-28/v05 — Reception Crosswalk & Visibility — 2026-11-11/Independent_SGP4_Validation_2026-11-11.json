@@ -1,0 +1,72 @@
+{
+  "archive_date": "2026-11-11",
+  "engine": "Python sgp4 2.25 with WGS84 ground sites",
+  "matlab_execution_status": "NOT_RUN_NO_MATLAB_IN_CLOUD_RUNTIME",
+  "geometry_check_count": 585,
+  "configuration_count": 42,
+  "by_observer": {
+    "DL5FAB VHF/UHF": {
+      "receptions": 3,
+      "ace_rows": 6,
+      "all": {
+        "INSIDE_ALL_TESTED_ASSUMPTIONS": 3
+      },
+      "grid": {
+        "NOT_APPLICABLE": 3
+      }
+    },
+    "EA6TC": {
+      "receptions": 23,
+      "ace_rows": 46,
+      "all": {
+        "INSIDE_ALL_TESTED_ASSUMPTIONS": 22,
+        "SENSITIVE_TO_TESTED_ASSUMPTIONS": 1
+      },
+      "grid": {
+        "INSIDE_ALL_TESTED_ASSUMPTIONS": 22,
+        "SENSITIVE_TO_TESTED_ASSUMPTIONS": 1
+      }
+    },
+    "ESA Academy @ESTEC": {
+      "receptions": 2,
+      "ace_rows": 4,
+      "all": {
+        "INSIDE_ALL_TESTED_ASSUMPTIONS": 2
+      },
+      "grid": {
+        "NOT_APPLICABLE": 2
+      }
+    },
+    "EU1XX": {
+      "receptions": 22,
+      "ace_rows": 44,
+      "all": {
+        "SENSITIVE_TO_TESTED_ASSUMPTIONS": 7,
+        "INSIDE_ALL_TESTED_ASSUMPTIONS": 15
+      },
+      "grid": {
+        "SENSITIVE_TO_TESTED_ASSUMPTIONS": 7,
+        "INSIDE_ALL_TESTED_ASSUMPTIONS": 15
+      }
+    }
+  },
+  "near_threshold_case_count": 2,
+  "global_smallest_abs_margin_deg": 0.02304816,
+  "matching_receptions": 49,
+  "unmatched_receptions": 1,
+  "existing_ace_rows": 100,
+  "original_tle_checksums": "PASS",
+  "network_tle_state_equivalence": [
+    {
+      "observation_id": "5369438",
+      "position_difference_m": 0.0
+    },
+    {
+      "observation_id": "5375671",
+      "position_difference_m": 0.0
+    }
+  ],
+  "controls": "PASS: site-zenith +90 deg; antipodal occultation; unique case keys and 2 ACE rows per reception.",
+  "frame_conversion": "TEME to pseudo-Earth-fixed by Vallado GMST using UTC as UT1; no polar motion. Approximate reference, not identical MATLAB implementation.",
+  "caution": "No frame reception counterfactual, packet-loss calculation, continuous-service or architecture-performance claim. Native MATLAB execution must be recorded separately."
+}
